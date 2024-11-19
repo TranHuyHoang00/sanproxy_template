@@ -1,12 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang chủ</title>
-    <!-- Tailwind Css -->
-    <link href="../../styles/output.css" rel="stylesheet" />
-  </head>
 
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang chủ</title>
+  <!-- Tailwind Css -->
+  <link href="../../styles/output.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="../../static/font/fontawesome-free-6.5.1-web/css/all.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="sticky top-0 text-[#07001C] font-[450] text-[12px] sm:text-[14px] lg:text-[16px]">
+    <div class="border-b shadow-sm bg-white flex items-center justify-between space-x-[10px]
+      py-[5px] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[60px]">
+      <!-- Logo -->
+      <div>
+        <a href="#" class="sm:block hidden">
+          <img src="../../static/image/logo_full.png" class="h-[50px] lg:h-[60px] w-auto" />
+        </a>
+        <a href="#" class="sm:hidden block">
+          <img src="../../static/image/logo_icon.png" class="h-[50px] w-auto" />
+        </a>
+      </div>
+      <!-- Menu -->
+      <div class="lg:block hidden">
+        <ul class="flex items-center relative space-x-[20px]">
+          <li>
+            <a class="smooth hover:text-[#4ba1f0]" href="#">
+              Trang chủ
+            </a>
+          </li>
+          <li class="dropdown relative">
+            <a class="smooth hover:text-[#4ba1f0]" href="#">
+              <div class="flex items-center space-x-[5px]">
+                <span>Mua Proxy</span>
+                <i class="fa-solid fa-sort-down text-[12px]"></i>
+              </div>
+            </a>
+            <div class="dropdown_menu list-none absolute hidden pt-[15px]">
+              <ul class="bg-white shadow-md border border-[#e9f2fa]
+              rounded-[5px] w-[250px] divide-y-[1px]">
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-t-[5px]">
+                  <a href="#" class="block w-full h-full p-[10px]">Mua IPV4 Private</a>
+                </li>
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-b-[5px]">
+                  <a href="#" class="block w-full h-full p-[10px]">Mua IPV4 Share</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown relative">
+            <a class="smooth hover:text-[#4ba1f0]" href="#">
+              <div class="flex items-center space-x-[5px]">
+                <span>Dịch vụ</span>
+                <i class="fa-solid fa-sort-down text-[12px]"></i>
+              </div>
+            </a>
+            <div class="dropdown_menu list-none absolute hidden pt-[15px]">
+              <ul class="bg-white shadow-md border border-[#e9f2fa]
+                rounded-[5px] w-[250px] divide-y-[1px]">
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-t-[5px]">
+                  <a href="#" class="block w-full h-full p-[10px]">Proxy Việt Nam</a>
+                </li>
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-b-[5px]">
+                  <a href="#" class="block w-full h-full p-[10px]">Proxy USA</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown relative">
+            <a class="smooth hover:text-[#4ba1f0]" href="#">
+              <div class="flex items-center space-x-[5px]">
+                <span>Hướng dẫn</span>
+                <i class="fa-solid fa-sort-down text-[12px]"></i>
+              </div>
+            </a>
+            <div class="dropdown_menu list-none absolute hidden pt-[15px]">
+              <ul class="bg-white shadow-md border border-[#e9f2fa]
+                rounded-[5px] w-[250px] divide-y-[1px]">
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-t-[5px]">
+                  <a href="#" class="block w-full h-full p-[10px]">Mua Proxy</a>
+                </li>
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-b-[5px]">
+                  <a href="#" class="block w-full h-full p-[10px]">Sử dụng Proxy</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown relative">
+            <a class="smooth hover:text-[#4ba1f0]" href="#">
+              <div class="flex items-center space-x-[5px]">
+                <span>Blog</span>
+                <i class="fa-solid fa-sort-down text-[12px]"></i>
+              </div>
+            </a>
+            <div class="dropdown_menu list-none absolute hidden pt-[15px]">
+              <ul class="bg-white shadow-md border border-[#e9f2fa]
+                rounded-[5px] w-[250px] divide-y-[1px]">
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-t-[5px]">
+                  <a href="#" class="block w-full h-full p-[10px]">Fanpage Facebook</a>
+                </li>
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth">
+                  <a href="#" class="block w-full h-full p-[10px]">Chanel Youtube</a>
+                </li>
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-b-[5px]">
+                  <a href="#" class="block w-full h-full p-[10px]">Tiktok</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown relative">
+            <a class="smooth hover:text-[#4ba1f0]" href="#">
+              <div class="flex items-center space-x-[5px]">
+                <span>Liên hệ</span>
+                <i class="fa-solid fa-sort-down text-[12px]"></i>
+              </div>
+            </a>
+            <div class="dropdown_menu list-none absolute hidden pt-[15px]">
+              <ul class="bg-white shadow-md border border-[#e9f2fa]
+              rounded-[5px] w-[250px] divide-y-[1px]">
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-t-[5px]">
+                  <a href="#" class="block w-full h-full p-[10px]">Message</a>
+                </li>
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth">
+                  <a href="#" class="block w-full h-full p-[10px]">Zalo</a>
+                </li>
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth">
+                  <a href="#" class="block w-full h-full p-[10px]">Telegram</a>
+                </li>
+                <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-b-[5px]">
+                  <a href="#" class="block w-full h-full p-[10px]">Phone</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Menu Icon lg:hidden-->
+      <button id="htmlBtnOpenModalMenu" class=" block">
+        <i class="fa-solid fa-bars text-[22px]"></i>
+      </button>
+      <!-- Account -->
+      <div class="flex items-center gap-[5px]">
+        <button class="bg-[#4ba1f0] text-white border rounded-[5px] w-[80px] sm:w-[100px]">
+          <a href="#" class="block w-full h-full py-[5px]">Đăng nhập</a>
+        </button>
+        <button class="bg-[#4ba1f0] text-white border rounded-[5px] w-[80px] sm:w-[100px]">
+          <a href="#" class="block w-full h-full py-[5px]">Đăng ký</a>
+        </button>
+      </div>
+    </div>
+    <!-- Menu Modal -->
+    <div id="modelMenu" class="fixed block z-50 inset-0 bg-gray-500 overflow-y-auto">
+      <div class="relative bg-white overflow-y-auto h-screen border shadow-sm max-w-xs">
+        <div class="flex justify-between p-[10px]">
+          <div>
+            <img src="../../static/image/logo_full.png" class="h-[40px] w-auto" />
+          </div>
+          <button id="htmlBtnCloseModalMenu">
+            <i class="fa-solid fa-circle-xmark text-[24px]"></i>
+          </button>
+        </div>
+        <div class="text-[16px]">
+          <ul class="space-y-[5px]">
+            <li>
+              <a class=" block h-full w-full py-[5px] pl-[20px]" href="#">Trang chủ</a>
+            </li>
+            <li class="space-y-[5px]">
+              <div class="flex items-center justify-between">
+                <div class="w-4/5">
+                  <a class=" block h-full w-full py-[5px] pl-[20px]" href="#">Mua Proxy</a>
+                </div>
+                <div class="w-1/5">
+                  <div class="htmlBtnOpenMenuChildren cursor-pointer py-[5px] pr-[20px]
+                   w-full h-full flex justify-end">
+                    <i class="fa-solid fa-sort-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="pl-[30px] pr-[15px] sub_menu" style="display: none">
+                <ul class="rounded-[5px] shadow-sm border border-[#e9f2fa] divide-y-[1px]">
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-t-[5px]">
+                    <a href="#" class="block w-full h-full p-[10px]">Mua IPV4 Private</a>
+                  </li>
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-b-[5px]">
+                    <a href="#" class="block w-full h-full p-[10px]">Mua IPV4 Private</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="space-y-[5px]">
+              <div class="flex items-center justify-between">
+                <div class="w-4/5">
+                  <a class=" block h-full w-full py-[5px] pl-[20px]" href="#">Dịch vụ</a>
+                </div>
+                <div class="w-1/5">
+                  <div class="htmlBtnOpenMenuChildren cursor-pointer py-[5px] pr-[20px]
+                    w-full h-full flex justify-end">
+                    <i class="fa-solid fa-sort-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="pl-[30px] pr-[15px] sub_menu" style="display: none">
+                <ul class="rounded-[5px] shadow-sm border border-[#e9f2fa] divide-y-[1px]">
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-t-[5px]">
+                    <a href="#" class="block w-full h-full p-[10px]">Proxy Việt Nam</a>
+                  </li>
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-b-[5px]">
+                    <a href="#" class="block w-full h-full p-[10px]">Proxy USA</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="space-y-[5px]">
+              <div class="flex items-center justify-between">
+                <div class="w-4/5">
+                  <a class=" block h-full w-full py-[5px] pl-[20px]" href="#">Hướng dẫn</a>
+                </div>
+                <div class="w-1/5">
+                  <div class="htmlBtnOpenMenuChildren cursor-pointer py-[5px] pr-[20px]
+                  w-full h-full flex justify-end">
+                    <i class="fa-solid fa-sort-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="pl-[30px] pr-[15px] sub_menu" style="display: none">
+                <ul class="rounded-[5px] shadow-sm border border-[#e9f2fa] divide-y-[1px]">
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-t-[5px]">
+                    <a href="#" class="block w-full h-full p-[10px]">Mua Proxy</a>
+                  </li>
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-b-[5px]">
+                    <a href="#" class="block w-full h-full p-[10px]">Sử dụng Proxy</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="space-y-[5px]">
+              <div class="flex items-center justify-between">
+                <div class="w-4/5">
+                  <a class=" block h-full w-full py-[5px] pl-[20px]" href="#">Blog</a>
+                </div>
+                <div class="w-1/5">
+                  <div class="htmlBtnOpenMenuChildren cursor-pointer py-[5px] pr-[20px]
+                    w-full h-full flex justify-end">
+                    <i class="fa-solid fa-sort-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="pl-[30px] pr-[15px] sub_menu" style="display: none">
+                <ul class="rounded-[5px] shadow-sm border border-[#e9f2fa] divide-y-[1px]">
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-t-[5px]">
+                    <a href="#" class="block w-full h-full p-[10px]">Fanpage Facebook</a>
+                  </li>
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth">
+                    <a href="#" class="block w-full h-full p-[10px]">Chanel Youtube</a>
+                  </li>
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-b-[5px]">
+                    <a href="#" class="block w-full h-full p-[10px]">Tiktok</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="space-y-[5px]">
+              <div class="flex items-center justify-between">
+                <div class="w-4/5">
+                  <a class=" block h-full w-full py-[5px] pl-[20px]" href="#">Liên hệ</a>
+                </div>
+                <div class="w-1/5">
+                  <div class="htmlBtnOpenMenuChildren cursor-pointer py-[5px] pr-[20px]
+                  w-full h-full flex justify-end">
+                    <i class="fa-solid fa-sort-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="pl-[30px] pr-[15px] sub_menu" style="display: none">
+                <ul class="rounded-[5px] shadow-sm border border-[#e9f2fa] divide-y-[1px]">
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-t-[5px]">
+                    <a href="#" class="block w-full h-full p-[10px]">Massage</a>
+                  </li>
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth">
+                    <a href="#" class="block w-full h-full p-[10px]">Zalo</a>
+                  </li>
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth">
+                    <a href="#" class="block w-full h-full p-[10px]">Telegram</a>
+                  </li>
+                  <li class="hover:bg-[#4ba1f0] hover:text-white smooth rounded-b-[5px]">
+                    <a href="#" class="block w-full h-full p-[10px]">Phone</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>Main</main>
+  <!-- Footer -->
+  <footer>Footer</footer>
+  <script src="../../static/js/header.js"></script>
+</body>
+
 </html>
